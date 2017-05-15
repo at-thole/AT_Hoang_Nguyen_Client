@@ -1,0 +1,91 @@
+  <section class="body container">
+    <div class="span-16 list-article" *ngFor='let art of listArticle'>
+      <article class="article-home">
+        <div class="info  ">
+          <a href="#" title=""><h3>{{art.title}}</h3></a>
+
+          <div class="size clearfix">
+            <div class="span-5">
+              <i class="fa fa-user" aria-hidden="true"></i>
+              by <span>{{art.user.email}}</span>
+            </div>
+
+            <div class="span-5 ">
+              <i class="fa fa-tags" aria-hidden="true"></i>
+              <ul>
+                <li><a href="#" title="tag">{{art.category.name}}</a></li>
+
+              </ul>
+            </div>
+
+            <div class="span-5 last">
+              <i class="fa fa-calendar-o" aria-hidden="true"></i>
+              <span>{{art.updated_at| date:'medium'}}</span>
+            </div>
+          </div>
+
+        </div>
+        <div class="content">
+          <img class="img-home" src="assets/image/img-article/article2.jpg" alt="article">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but ...</p>
+        </div>
+        <div class="read clearfix">
+          <div class="span-10 ">
+            <a href="#" title="">readmore</a>
+          </div>
+          <div class="span-5 prepend-3 last">
+            <i class="fa fa-comments" aria-hidden="true"></i>
+            <span>12</span>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="span-8 last sliderbar">
+      <div class="search">
+        <div class="content-search">
+          <span class="icon"><i class="fa fa-search"></i></span>
+          <input type="search" id="search" placeholder="Search..." />
+        </div>
+      </div>
+      <div class="tag">
+        <h3>label</h3>
+        <ul *ngFor="let cate of listCategory">
+          <li><a href="#" title="It"><i class="fa fa-angle-right" aria-hidden="true"></i>{{cate.name}}</a></li>
+        </ul>
+      </div>
+
+      <div class="popular-sil">
+        <h3>Popular Post</h3>
+        <div class="art-popu clearfix">
+          <div class="span-2">
+            <a href="#" title=""><img src="assets/image/img-article/article2.jpg" alt="art-popu"></a>
+          </div>
+          <div class="span-5 last">
+            <a href="#" title=""><h4>Title</h4></a>
+            <p>ashgdajgdjagsdaghs</p>
+          </div>
+        </div>
+
+        <div class="art-popu clearfix">
+          <div class="span-2">
+            <a href="#" title=""><img src="assets/image/img-article/article2.jpg" alt="art-popu"></a>
+          </div>
+          <div class="span-5 last">
+            <a href="#" title=""><h4>Title</h4></a>
+            <p>ashgdajgdjagsdaghs</p>
+          </div>
+        </div>
+
+        <div class="art-popu clearfix">
+          <div class="span-2">
+            <a href="#" title=""><img src="assets/image/img-article/article2.jpg" alt="art-popu"></a>
+          </div>
+          <div class="span-5 last">
+            <a href="#" title=""><h4>Title</h4></a>
+            <p>ashgdajgdjagsdaghs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

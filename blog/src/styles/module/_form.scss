@@ -1,0 +1,65 @@
+form {
+  border: 3px solid #f1f1f1;
+  background-color: #ffffff;
+  margin: 100px 200px;
+}
+
+input[type=text], input[type=file], input[type=email], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #000;
+  border-radius: 2px;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 5px 20px;
+  text-decoration: none;
+  border: none;
+  .signup{
+    float: none;
+  }
+  .signin{
+    float: right;
+  }
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.imgcontainer {
+  text-align: center;
+  margin: 40px 0 12px 0;
+}
+img.avatar {
+  height: 150px;
+  width: 350px;
+  border-radius: 50%;
+}
+.container-login {
+  padding: 0px 150px 45px 150px;
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  .opt{
+    text-align: center;
+  }
+  label{
+    text-transform: capitalize;
+  }
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+   display: block;
+   float: none;
+ }
+}
