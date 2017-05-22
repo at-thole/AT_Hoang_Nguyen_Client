@@ -10,6 +10,12 @@ import { HomeComponent } from "app/pages/home/home.component";
 import { LoginComponent } from "app/pages/login/login.component";
 import { RegisterComponent } from "app/pages/register/register.component";
 import { routing } from "app/app.routes";
+import { DetailsComponent } from "app/pages/art-detail/detail.component";
+import { SidebarComponent } from "app/layouts/sidebar/sidebar.component";
+import { ProfileComponent } from "app/pages/profile/profile.component";
+import { SettingComponent } from "app/pages/setting/setting.component";
+import { NewArticleComponent } from "app/pages/art-detail/newArticle.component";
+import { HomeService } from "app/pages/home/home.service";
 
 @NgModule({
   declarations: [
@@ -18,7 +24,12 @@ import { routing } from "app/app.routes";
     FooterComponent,
     HomeComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    DetailsComponent,
+    SidebarComponent,
+    NewArticleComponent,
+    ProfileComponent,
+    SettingComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +37,9 @@ import { routing } from "app/app.routes";
     HttpModule,
     routing
   ],
-  providers: [],
+  providers: [
+    HomeService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

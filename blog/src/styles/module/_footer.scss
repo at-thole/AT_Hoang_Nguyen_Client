@@ -24,8 +24,10 @@
     transition: 0.2s color;
     transition-delay: .3s;
     color: #bdc3c7;
+    text-transform: capitalize;
+    tr
     &:hover{
-      color: #fb095f;
+      color: #ff5108;
     }
   }
 }

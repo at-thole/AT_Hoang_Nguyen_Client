@@ -1,0 +1,24 @@
+{
+  "categories": [
+        {
+          "id": 1,
+          "name": "Information Technology"
+        },
+        {
+          "id": 2,
+          "name": "medical"
+        },
+        {
+          "id": 3,
+          "name": "technical"
+        },
+        {
+          "id": 4,
+          "name": "Life"
+        },
+        {
+          "id": 5,
+          "name": "Passion"
+        }
+      ]
+}

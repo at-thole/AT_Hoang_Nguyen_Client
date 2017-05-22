@@ -1,10 +1,15 @@
 @import'partial/reset';
 @import'partial/gridview';
 @import'partial/common';
+@import'partial/button';
 
 
 @import'module/header';
 @import'module/footer';
+@import'module/sliderbar';
 @import'module/form';
 
 @import'pages/home';
+@import'pages/details';
+@import'pages/profile';
+@import'pages/contact';
