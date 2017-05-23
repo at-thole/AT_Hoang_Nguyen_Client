@@ -13,8 +13,8 @@ import 'rxjs/add/observable/throw';
 export class HomeService {
   constructor(private _http: Http) { }
   getArticle() {
-    return this._http.get('assets/data/article.json')
-    // return this._http.get('http://172.16.115.61:3000/api/v1/articles')
+    // return this._http.get('assets/data/article.json')
+    return this._http.get('http://172.17.29.26:3000/api/v1/articles')
       .map((res: any) => { return res.json(); });
   }
 

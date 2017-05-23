@@ -1,9 +1,9 @@
 .profile{
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 90px;
+  margin-bottom: 50px;
 }
 .info-user{
-  background-color: #ffffff;
+  background-color: $color-white;
   padding: 20px;
   text-align: center;
   .image-user{
@@ -33,7 +33,7 @@
         display: block;
         padding: 10px;
         margin: 10px 0px;
-        border-bottom: 1px dotted #95a5a6;
+        border-bottom: 1px dotted $color-gray;
         text-transform: uppercase;
       }
     }
@@ -46,9 +46,9 @@
         display: inline-block;
         padding: 20px;
         a{
-          color: #999;
+          color: $color-dark-gray;
           &:hover{
-            color: #ff5108;
+            color: $color-orange;
           }
         }
         img{
@@ -63,7 +63,7 @@
 .art-profile{
   padding-left: 10px;
   .art{
-    background-color: #ffffff;
+    background-color: $color-white;
     padding: 15px ;
     margin-bottom: 20px;
     .img-pro{

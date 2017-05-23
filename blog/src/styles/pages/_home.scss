@@ -1,14 +1,13 @@
 .body {
-
-  margin-top: 125px;
+  margin-top: 100px;
   margin-bottom: 50px;
 }
 
 .article-home {
-  background-color: #fff;
+  background-color: $color-white;
   padding: 10px 0px;
   margin-bottom: 10px;
-  box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.3);
+  box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.2);
   .info{
     padding: 15px;
     .size{
@@ -20,7 +19,8 @@
     }
     ul{
       list-style: none;
-      display: inline-block;       li{
+      display: inline-block;       
+      li{
         display: inline-block;
       }
     }
@@ -38,16 +38,16 @@
   }
   .read{
     margin: 15px;
-    border-top: 1px solid #bdc3c7;
+    border-top: 1px solid $color-gray;
     .follow{
       list-style: none;
       padding-top: 5px; 
       li{
         padding: 0px 5px;
         display: inline-block;
-        border-right: 1px solid #4f5b66;
+        border-right: 1px solid $color-gray;
         &:last-child{
-          border-right: none;
+          border-right: 0px;
         }
       }
     }

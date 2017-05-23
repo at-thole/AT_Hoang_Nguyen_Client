@@ -6,6 +6,7 @@ import { DetailsComponent } from "app/pages/art-detail/detail.component";
 import { ProfileComponent } from "app/pages/profile/profile.component";
 import { SettingComponent } from "app/pages/setting/setting.component";
 import { NewArticleComponent } from "app/pages/art-detail/newArticle.component";
+import { ContactComponent } from "app/pages/contact/contact.component";
 
 const routes: Routes = [
   // map '/persons' to the people list component
@@ -39,10 +40,14 @@ const routes: Routes = [
     path: 'setting',
     component: SettingComponent,
   },
-    {
+  {
     path: 'newArticle',
     component: NewArticleComponent,
   },
+  {
+    path: 'contact',
+    component: ContactComponent,
+  }
 ];
 
 export const routing = RouterModule.forRoot(routes);

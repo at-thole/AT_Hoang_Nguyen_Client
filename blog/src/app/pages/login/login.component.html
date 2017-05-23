@@ -1,16 +1,21 @@
 <section class="container">
   <div class='form-container'>
     <div class='form f-sm clearfix'>
-     <form>
-       <h3>login</h3>
-       <input type='email' placeholder='Email:'  />
-       <input type='password' placeholder='Password:'  />
-       <button type='submit' class="btn md cta">LOGIN</button>
-       <div class="opt">
-         <a class="pull-letf" href="#" title="password">forgot password ?</a>
-         <a class="pull-right" href="#" title="register">Create an account</a>
-       </div>
-     </form>
-   </div>
- </div>
+      <h3>login</h3>
+      <form [formGroup]="loginForm" (ngSubmit)="login()" novalidate>
+
+        <input type='text' formControlName="email" placeholder="Email:" />
+        <span class="err-smg">*mail error or blank</span>
+
+        <input type='password' formControlName="password" placeholder="Password:" />
+        <span class="err-smg">*password error or blank</span>
+
+        <button type="submit" [disabled]="!loginForm.valid" class="btn md cta">login</button>
+      </form>
+      <div class="opt">
+        <a class="pull-letf" title="password" routerLinkActive="active">forgot password ?</a>
+        <a class="pull-right" routerlink="['/register']" routerLinkActive="active">create an account</a>
+      </div>
+    </div>
+  </div>
 </section>
